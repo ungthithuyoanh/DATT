@@ -1,0 +1,72 @@
+
+nav .menu{
+background-color: #512467;
+/*background-color: rgba(255,255,255,0.1);*/
+padding: 0;
+margin: 0;
+overflow: hidden;
+font-size:18px;
+}
+nav .menu a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+}
+nav .menu a:hover{
+	background-color: #FF0000;
+}
+nav .menu a.close{
+	display: none;
+}
+nav i.fa-bars{
+	position: absolute;
+	right:10%;
+	margin: 8px 10px;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	nav .menu{
+		height:45px; 
+	}
+	nav .menu a{
+		display: none;
+	}
+	nav.mobile-mod{
+		text-align: left;
+		z-index: 50;
+		overflow: auto;
+		/*background: black;*/
+		background: rgba(255,255,255,0.1);
+	}
+	nav.mobile-mod .menu{
+		display: block;
+	}
+	nav.mobile-mod .menu a{
+		display: block;
+		color: white;
+	}
+	nav.mobile-mod .menu a.close{
+		font-weight: bold;
+		display: block;
+		color: #fff;
+		font-size: 20px;
+	}
+	nav.mobile-mod .menu a.collapse i{
+		position:relative;
+		display: inline-block;
+		color: #009698;
+		font-size: 20px;
+	}
+	nav.mobile-mod .menu a:hover{
+		background-color: #FF0000;
+	}
+	nav i.fa{
+		display:block;
+	}
+	nav.mobile-mod .menu{
+		height: 290px;
+	}
+}
